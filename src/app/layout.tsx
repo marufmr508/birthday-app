@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavberPage from "./components/navber/navber";
+import MemoryPage from "./components/memories/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,10 +29,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
 
          <NavberPage />
+         {/* <MemoryPage /> */}
       <main>
        {children} 
       </main>
-      {children}
+      
       </body>
     </html>
   );

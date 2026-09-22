@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "image": "/images/birthday-1.jpg",
+    "message": "Happy Birthday! 🎂",
+    "description": "A special person who makes every day brighter."
+  },
+  {
+    "id": 2,
+    "image": "/images/birthday-2.jpg",
+    "message": "Happy Birthday! 🎉",
+    "description": "A beautiful memory worth celebrating."
+  },
+  {
+    "id": 3,
+    "image": "/images/birthday-3.jpg",
+    "message": "Happy Birthday! 💖",
+    "description": "Wishing you happiness and beautiful moments."
+  },
+  {
+    "id": 4,
+    "image": "/images/birthday-4.jpg",
+    "message": "Happy Birthday! 🥳",
+    "description": "Another wonderful memory to cherish forever."
+  },
+  {
+    "id": 5,
+    "image": "/images/birthday-5.jpg",
+    "message": "Happy Birthday! 🌸",
+    "description": "A beautiful smile that makes every moment special."
+  },
+  {
+    "id": 6,
+    "image": "/images/birthday-6.jpg",
+    "message": "Happy Birthday! 🎁",
+    "description": "May your special day be filled with joy."
+  },
+  {
+    "id": 7,
+    "image": "/images/birthday-7.jpg",
+    "message": "Happy Birthday! ✨",
+    "description": "Creating another beautiful memory together."
+  },
+  {
+    "id": 8,
+    "image": "/images/birthday-8.jpg",
+    "message": "Happy Birthday! 💐",
+    "description": "Wishing you countless reasons to smile."
+  },
+  {
+    "id": 9,
+    "image": "/images/birthday-9.jpg",
+    "message": "Happy Birthday! ❤️",
+    "description": "A special moment captured forever."
+  },
+  {
+    "id": 10,
+    "image": "/images/birthday-10.jpg",
+    "message": "Happy Birthday! 🎂",
+    "description": "May every new year bring more happiness."
+  },
+  {
+    "id": 11,
+    "image": "/images/birthday-11.jpg",
+    "message": "Happy Birthday! 🌷",
+    "description": "A precious memory filled with happiness."
+  },
+  {
+    "id": 12,
+    "image": "/images/birthday-12.jpg",
+    "message": "Happy Birthday! 🎊",
+    "description": "Celebrating another beautiful chapter."
+  },
+  {
+    "id": 13,
+    "image": "/images/birthday-13.jpg",
+    "message": "Happy Birthday! 💕",
+    "description": "May your day be as wonderful as your smile."
+  },
+  {
+    "id": 14,
+    "image": "/images/birthday-14.jpg",
+    "message": "Happy Birthday! 🌹",
+    "description": "A lovely moment to remember forever."
+  },
+  {
+    "id": 15,
+    "image": "/images/birthday-15.jpg",
+    "message": "Happy Birthday! 🎉🎂",
+    "description": "Fifteen beautiful memories for a very special birthday."
+  },
+  {
+    "id": 16,
+    "image": "/images/birthday-16.jpg",
+    "message": "Happy Birthday! 🎉🎂",
+    "description": "Fifteen beautiful memories for a very special birthday."
+  }
+]
