@@ -18,66 +18,66 @@ const HeroSection = () => {
       className="relative min-h-screen overflow-hidden bg-[#4c0519] text-white"
     >
       {/* =====================================================
-          STRAWBERRY 3D BACKGROUND
+          STRAWBERRY BACKGROUND
       ====================================================== */}
 
-      {/* Base strawberry gradient */}
+      {/* Main gradient */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_35%,#fecdd3_0%,#fb7185_20%,#f43f5e_40%,#e11d48_60%,#9f1239_80%,#4c0519_100%)]" />
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_35%,#fecdd3_0%,#fb7185_18%,#f43f5e_38%,#e11d48_58%,#9f1239_78%,#4c0519_100%)]" />
+      {/* Main glow - reduced blur */}
+      <div className="absolute left-[55%] top-[35%] h-[350px] w-[350px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-200/20 blur-[60px] sm:h-[450px] sm:w-[450px] sm:blur-[80px]" />
 
-      {/* Huge 3D light */}
+      {/* Side glows */}
+      <div className="absolute -right-32 top-20 h-[350px] w-[350px] rounded-full bg-rose-300/15 blur-[70px]" />
 
-      <div className="absolute left-[55%] top-[35%] h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-200/30 blur-[100px]" />
-
-      {/* Secondary depth glow */}
-
-      <div className="absolute -right-40 top-20 h-[500px] w-[500px] rounded-full bg-rose-300/20 blur-[120px]" />
-
-      <div className="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-red-400/20 blur-[120px]" />
+      <div className="absolute -bottom-32 -left-32 h-[350px] w-[350px] rounded-full bg-red-400/15 blur-[70px]" />
 
       {/* =====================================================
-          3D FLOATING GLASS SPHERES
+          FLOATING SPHERES
       ====================================================== */}
 
-      <div className="absolute left-[5%] top-[18%] h-32 w-32 animate-bounce rounded-full border border-white/20 bg-gradient-to-br from-white/30 via-pink-300/10 to-red-500/20 shadow-[inset_-20px_-20px_40px_rgba(159,18,57,0.3),0_0_80px_rgba(253,164,175,0.4)] backdrop-blur-md [animation-duration:8s]" />
+      {/* Large sphere */}
+      <div
+        className="absolute left-[4%] top-[18%] h-20 w-20 rounded-full border border-white/20 bg-white/10 shadow-[0_0_40px_rgba(253,164,175,0.3)] sm:h-28 sm:w-28"
+      />
 
-      <div className="absolute right-[8%] top-[12%] h-44 w-44 animate-bounce rounded-full border border-white/20 bg-gradient-to-br from-white/25 via-rose-300/10 to-red-600/20 shadow-[inset_-30px_-30px_50px_rgba(136,19,55,0.35),0_0_100px_rgba(251,113,133,0.5)] backdrop-blur-md [animation-duration:10s]" />
+      {/* Right sphere */}
+      <div
+        className="absolute right-[5%] top-[12%] h-28 w-28 rounded-full border border-white/20 bg-white/10 shadow-[0_0_50px_rgba(251,113,133,0.3)] sm:h-36 sm:w-36"
+      />
 
-      <div className="absolute bottom-[10%] left-[12%] h-24 w-24 animate-bounce rounded-full border border-white/20 bg-gradient-to-br from-white/30 to-pink-400/10 shadow-[0_0_70px_rgba(253,164,175,0.5)] backdrop-blur-md [animation-duration:7s]" />
+      {/* Bottom spheres */}
+      <div className="absolute bottom-[12%] left-[8%] h-16 w-16 rounded-full border border-white/20 bg-white/10 shadow-[0_0_35px_rgba(253,164,175,0.3)] sm:h-20 sm:w-20" />
 
-      <div className="absolute bottom-[15%] right-[20%] h-20 w-20 animate-bounce rounded-full border border-white/20 bg-white/10 shadow-[0_0_60px_rgba(251,113,133,0.6)] backdrop-blur-md [animation-duration:6s]" />
+      <div className="absolute bottom-[15%] right-[15%] h-14 w-14 rounded-full border border-white/20 bg-white/10 shadow-[0_0_30px_rgba(251,113,133,0.3)] sm:h-20 sm:w-20" />
 
       {/* =====================================================
-          3D GLASS ORBS — SMALL
+          SMALL ORBS
       ====================================================== */}
 
-      <div className="absolute left-[20%] top-[55%] h-10 w-10 animate-pulse rounded-full border border-white/30 bg-white/20 shadow-[inset_-8px_-8px_15px_rgba(136,19,55,0.3),0_0_30px_rgba(255,255,255,0.3)] backdrop-blur-md" />
+      <div className="absolute left-[20%] top-[55%] h-7 w-7 rounded-full bg-white/20 shadow-[0_0_20px_rgba(255,255,255,0.3)] sm:h-10 sm:w-10" />
 
-      <div className="absolute right-[35%] top-[18%] h-8 w-8 animate-pulse rounded-full border border-white/30 bg-white/20 shadow-[0_0_30px_rgba(255,255,255,0.4)] backdrop-blur-md" />
+      <div className="absolute right-[35%] top-[18%] h-6 w-6 rounded-full bg-white/20 shadow-[0_0_20px_rgba(255,255,255,0.3)]" />
 
-      <div className="absolute bottom-[25%] right-[8%] h-12 w-12 animate-pulse rounded-full border border-white/30 bg-white/20 shadow-[0_0_40px_rgba(255,255,255,0.4)] backdrop-blur-md" />
+      <div className="absolute bottom-[25%] right-[8%] h-8 w-8 rounded-full bg-white/20 shadow-[0_0_25px_rgba(255,255,255,0.3)]" />
 
       {/* =====================================================
           FLOATING HEARTS
       ====================================================== */}
 
-      <div className="absolute left-[12%] top-[40%] animate-bounce text-5xl text-pink-100/70 drop-shadow-[0_0_25px_rgba(255,255,255,0.5)] [animation-duration:6s]">
+      <div className="absolute left-[10%] top-[40%] animate-bounce text-3xl text-pink-100/60 [animation-duration:6s] sm:text-5xl">
         ♥
       </div>
 
-      <div className="absolute left-[30%] top-[12%] animate-bounce text-3xl text-white/70 drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] [animation-duration:7s]">
+      <div className="absolute left-[30%] top-[12%] animate-bounce text-2xl text-white/60 [animation-duration:7s] sm:text-3xl">
         ♥
       </div>
 
-      <div className="absolute right-[32%] top-[25%] animate-bounce text-4xl text-pink-100/80 drop-shadow-[0_0_25px_rgba(255,255,255,0.5)] [animation-duration:5s]">
+      <div className="absolute right-[32%] top-[25%] animate-bounce text-3xl text-pink-100/70 [animation-duration:5s] sm:text-4xl">
         ♥
       </div>
 
-      <div className="absolute right-[7%] top-[52%] animate-bounce text-6xl text-white/60 drop-shadow-[0_0_30px_rgba(255,255,255,0.5)] [animation-duration:8s]">
-        ♥
-      </div>
-
-      <div className="absolute bottom-[22%] right-[35%] animate-bounce text-2xl text-pink-100/70 [animation-duration:6s]">
+      <div className="absolute right-[7%] top-[52%] animate-bounce text-4xl text-white/50 [animation-duration:8s] sm:text-6xl">
         ♥
       </div>
 
@@ -85,61 +85,59 @@ const HeroSection = () => {
           SPARKLES
       ====================================================== */}
 
-      <HiOutlineSparkles className="absolute left-[18%] top-[28%] animate-pulse text-3xl text-white/80" />
+      <HiOutlineSparkles className="absolute left-[18%] top-[28%] animate-pulse text-2xl text-white/70 sm:text-3xl" />
 
-      <HiOutlineSparkles className="absolute right-[25%] top-[40%] animate-pulse text-2xl text-pink-100/90" />
+      <HiOutlineSparkles className="absolute right-[25%] top-[40%] animate-pulse text-xl text-pink-100/70 sm:text-2xl" />
 
-      <HiOutlineSparkles className="absolute bottom-[25%] left-[40%] animate-pulse text-xl text-white/70" />
-
-      <HiOutlineSparkles className="absolute right-[15%] bottom-[30%] animate-pulse text-3xl text-pink-100/70" />
+      <HiOutlineSparkles className="absolute bottom-[25%] left-[40%] animate-pulse text-lg text-white/60 sm:text-xl" />
 
       {/* =====================================================
-          3D FLOOR / DEPTH
+          3D FLOOR
       ====================================================== */}
 
-      <div className="absolute bottom-[-25%] left-1/2 h-[500px] w-[120%] -translate-x-1/2 rotate-x-[65deg] bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:55px_55px] opacity-30 [transform:perspective(700px)_rotateX(65deg)]" />
+      <div className="absolute bottom-[-20%] left-1/2 h-[350px] w-[120%] -translate-x-1/2 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:45px_45px] opacity-20 [transform:perspective(700px)_rotateX(65deg)]" />
 
       {/* =====================================================
           MAIN CONTENT
       ====================================================== */}
 
-      <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl items-center px-6 py-20 lg:px-10">
+      <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl items-center px-5 py-24 sm:px-6 lg:px-10 lg:py-20">
 
-        <div className="grid w-full items-center gap-16 lg:grid-cols-2">
+        <div className="grid w-full items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
           {/* =================================================
-              LEFT TEXT
+              LEFT CONTENT
           ================================================== */}
 
           <div className="text-center lg:text-left">
 
             {/* Badge */}
 
-            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2.5 shadow-[0_10px_40px_rgba(136,19,55,0.2)] backdrop-blur-xl">
+            <div className="mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 shadow-lg backdrop-blur-sm sm:px-5 sm:py-2.5">
 
-              <HiOutlineHeart className="animate-pulse text-pink-100" />
+              <HiOutlineHeart className="shrink-0 animate-pulse text-pink-100" />
 
-              <span className="text-sm font-medium tracking-wide text-white">
+              <span className="text-xs font-medium tracking-wide text-white sm:text-sm">
                 A Special Day For Someone Special
               </span>
 
-              <HiOutlineHeart className="animate-pulse text-pink-100" />
+              <HiOutlineHeart className="shrink-0 animate-pulse text-pink-100" />
 
             </div>
 
             {/* Heading */}
 
-            <h1 className="text-5xl font-black leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">
+            <h1 className="font-black leading-[1.05] tracking-tight">
 
-                <span className="block text-white text-[2.8rem] font-extrabold sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl drop-shadow-[0_5px_25px_rgba(76,5,25,0.45)]">
-  Happy Birthday
-</span>
+              <span className="block text-[2.7rem] font-extrabold text-white drop-shadow-[0_5px_20px_rgba(76,5,25,0.45)] sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">
+                Happy Birthday
+              </span>
 
-                <span className="mt-3 block font-black text-[#fff1f2] drop-shadow-[0_0_12px_rgba(136,19,55,0.8)]">
-  Dear Rubat
-</span>
+              <span className="mt-3 block text-[2.7rem] font-black text-[#fff7f8] drop-shadow-[0_3px_15px_rgba(76,5,25,0.8)] sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">
+                Dear Rubat
+              </span>
 
-              <span className="mt-3 block text-4xl text-pink-100 sm:text-5xl">
+              <span className="mt-3 block text-3xl sm:text-5xl">
                 🍓✨
               </span>
 
@@ -147,28 +145,27 @@ const HeroSection = () => {
 
             {/* Bangla */}
 
-             <p className="mt-7 max-w-xl text-lg font-semibold leading-relaxed text-white drop-shadow-[0_2px_12px_rgba(76,5,25,0.35)] sm:text-xl lg:text-2xl">
-  আজকের দিনটা শুধু  আপনার  জন্মদিন নয়,
-  <br />
+            <p className="mx-auto mt-6 max-w-xl text-base font-semibold leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(76,5,25,0.4)] sm:text-xl lg:mx-0 lg:text-2xl">
 
-  <span className="text-pink-50">
-     আজকের দিনটি আপনাকে মনে করিয়ে দিচ্ছি যে, আপনি কতটা বিশেষ 💗
-  </span>
-</p>
+              আজকের দিনটা শুধু আপনার জন্মদিন নয়,
 
-            {/* Description */}
+              <br />
 
-              
+              <span className="text-pink-50">
+                আজকের দিনটি আপনাকে মনে করিয়ে দিচ্ছি যে, আপনি কতটা বিশেষ 💗
+              </span>
+
+            </p>
 
             {/* =================================================
                 BUTTONS
             ================================================== */}
 
-            <div className="mt-9 flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
+            <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row lg:justify-start">
 
               <Link
                 href="#surprise"
-                className="group flex items-center gap-3 rounded-full bg-white px-7 py-3.5 font-bold text-rose-600 shadow-[0_15px_50px_rgba(255,255,255,0.25)] transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_20px_60px_rgba(255,255,255,0.4)]"
+                className="group flex w-full items-center justify-center gap-3 rounded-full bg-white px-6 py-3.5 font-bold text-rose-600 shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 sm:w-auto"
               >
                 <HiOutlineGift className="text-xl transition duration-300 group-hover:rotate-12" />
 
@@ -182,7 +179,7 @@ const HeroSection = () => {
 
               <Link
                 href="#memories"
-                className="flex items-center gap-3 rounded-full border border-white/30 bg-white/10 px-7 py-3.5 font-semibold text-white shadow-lg backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/20"
+                className="flex w-full items-center justify-center gap-3 rounded-full border border-white/30 bg-white/10 px-6 py-3.5 font-semibold text-white shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/20 sm:w-auto"
               >
                 <HiOutlineCake className="text-xl" />
 
@@ -195,34 +192,34 @@ const HeroSection = () => {
                 STATS
             ================================================== */}
 
-            <div className="mt-10 flex justify-center gap-3 lg:justify-start">
+            <div className="mt-8 flex justify-center gap-2 sm:gap-3 lg:justify-start">
 
-              <div className="rounded-2xl border border-white/20 bg-white/10 px-5 py-3 shadow-lg backdrop-blur-xl">
-                <p className="text-xl font-bold">
+              <div className="rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 shadow-lg backdrop-blur-sm sm:rounded-2xl sm:px-5 sm:py-3">
+                <p className="text-lg font-bold sm:text-xl">
                   ∞
                 </p>
 
-                <p className="text-xs text-rose-100/70">
+                <p className="text-[10px] text-rose-100/70 sm:text-xs">
                   Love
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/20 bg-white/10 px-5 py-3 shadow-lg backdrop-blur-xl">
-                <p className="text-xl font-bold">
+              <div className="rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 shadow-lg backdrop-blur-sm sm:rounded-2xl sm:px-5 sm:py-3">
+                <p className="text-lg font-bold sm:text-xl">
                   365
                 </p>
 
-                <p className="text-xs text-rose-100/70">
+                <p className="text-[10px] text-rose-100/70 sm:text-xs">
                   Memories
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/20 bg-white/10 px-5 py-3 shadow-lg backdrop-blur-xl">
-                <p className="text-xl font-bold">
+              <div className="rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 shadow-lg backdrop-blur-sm sm:rounded-2xl sm:px-5 sm:py-3">
+                <p className="text-lg font-bold sm:text-xl">
                   ♥
                 </p>
 
-                <p className="text-xs text-rose-100/70">
+                <p className="text-[10px] text-rose-100/70 sm:text-xs">
                   Forever
                 </p>
               </div>
@@ -232,26 +229,26 @@ const HeroSection = () => {
           </div>
 
           {/* =================================================
-              RIGHT — PICTURE
+              RIGHT — IMAGE
           ================================================== */}
 
           <div className="relative flex items-center justify-center">
 
-            {/* Huge glow behind image */}
+            {/* Image glow */}
 
-            <div className="absolute h-[500px] w-[500px] rounded-full bg-pink-300/25 blur-[100px]" />
+            <div className="absolute h-[300px] w-[300px] rounded-full bg-pink-300/20 blur-[60px] sm:h-[400px] sm:w-[400px] sm:blur-[80px]" />
 
-            {/* Large glass circle behind image */}
+            {/* Glass circle */}
 
-            <div className="absolute h-[450px] w-[450px] rounded-full border border-white/10 bg-white/5 shadow-[inset_-30px_-30px_80px_rgba(136,19,55,0.2),0_0_100px_rgba(251,113,133,0.35)] backdrop-blur-sm" />
+            <div className="absolute h-[300px] w-[300px] rounded-full border border-white/10 bg-white/5 shadow-[0_0_60px_rgba(251,113,133,0.25)] sm:h-[400px] sm:w-[400px]" />
 
-            {/* Floating heart */}
+            {/* Floating hearts */}
 
-            <div className="absolute left-[2%] top-[15%] z-30 animate-bounce text-5xl text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.7)] [animation-duration:5s]">
+            <div className="absolute left-[2%] top-[15%] z-30 animate-bounce text-4xl text-white [animation-duration:5s] sm:text-5xl">
               ♥
             </div>
 
-            <div className="absolute right-[5%] top-[20%] z-30 animate-bounce text-4xl text-pink-100 drop-shadow-[0_0_25px_rgba(255,255,255,0.6)] [animation-duration:7s]">
+            <div className="absolute right-[5%] top-[20%] z-30 animate-bounce text-3xl text-pink-100 [animation-duration:7s] sm:text-4xl">
               ♥
             </div>
 
@@ -261,17 +258,17 @@ const HeroSection = () => {
 
             <div className="relative z-20 w-full max-w-[430px]">
 
-              {/* Back glass layer */}
+              {/* Back layers */}
 
-              <div className="absolute inset-4 rotate-6 rounded-[2.5rem] border border-white/10 bg-white/10 backdrop-blur-md" />
+              <div className="absolute inset-3 rotate-6 rounded-[2rem] border border-white/10 bg-white/10" />
 
-              <div className="absolute inset-4 -rotate-6 rounded-[2.5rem] border border-white/10 bg-pink-200/10 backdrop-blur-md" />
+              <div className="absolute inset-3 -rotate-6 rounded-[2rem] border border-white/10 bg-pink-200/10" />
 
-              {/* Main glass card */}
+              {/* Main card */}
 
-              <div className="relative overflow-hidden rounded-[2.5rem] border border-white/30 bg-white/10 p-3 shadow-[0_35px_100px_rgba(76,5,25,0.4)] backdrop-blur-xl">
+              <div className="relative overflow-hidden rounded-[2rem] border border-white/30 bg-white/10 p-2.5 shadow-[0_25px_70px_rgba(76,5,25,0.4)] backdrop-blur-sm sm:rounded-[2.5rem] sm:p-3">
 
-                <div className="relative overflow-hidden rounded-[2rem]">
+                <div className="relative overflow-hidden rounded-[1.5rem] sm:rounded-[2rem]">
 
                   <Image
                     src={logos}
@@ -279,33 +276,31 @@ const HeroSection = () => {
                     width={700}
                     height={850}
                     priority
-                    className="h-[500px] w-full object-cover transition duration-700 hover:scale-105"
+                    className="h-[380px] w-full object-cover transition duration-500 sm:h-[500px]"
                   />
 
-                  {/* Image shine */}
+                  {/* Image overlay */}
 
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-rose-950/40" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/15 via-transparent to-rose-950/35" />
 
-                  {/* Bottom glass message */}
+                  {/* Bottom message */}
 
-                  <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/20 bg-black/20 p-4 backdrop-blur-xl">
+                  <div className="absolute bottom-4 left-4 right-4 rounded-xl border border-white/20 bg-black/20 p-3 backdrop-blur-sm sm:bottom-5 sm:left-5 sm:right-5 sm:rounded-2xl sm:p-4">
 
                     <div className="flex items-center gap-3">
 
-                      <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white/20">
-
-                        <HiOutlineHeart className="animate-pulse text-2xl text-pink-100" />
-
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/20 sm:h-11 sm:w-11">
+                        <HiOutlineHeart className="animate-pulse text-xl text-pink-100 sm:text-2xl" />
                       </div>
 
-                      <div>
+                      <div className="min-w-0">
 
-                        <p className="font-bold text-white">
-                          Made With Love
+                        <p className="truncate text-sm font-bold text-white sm:text-base">
+                          You are truly special
                         </p>
 
-                        <p className="text-xs text-white/70">
-                          Just for you 🍓
+                        <p className="text-[10px] text-white/70 sm:text-xs">
+                          Wishing you a wonderful year ahead💕
                         </p>
 
                       </div>
@@ -320,21 +315,21 @@ const HeroSection = () => {
 
               {/* Birthday badge */}
 
-              <div className="absolute -right-5 top-8 z-30 rounded-2xl border border-white/25 bg-white/15 px-4 py-3 shadow-[0_15px_40px_rgba(76,5,25,0.25)] backdrop-blur-xl">
+              <div className="absolute -right-2 top-5 z-30 rounded-xl border border-white/25 bg-white/15 px-3 py-2 shadow-lg backdrop-blur-sm sm:-right-5 sm:top-8 sm:rounded-2xl sm:px-4 sm:py-3">
 
                 <div className="flex items-center gap-2">
 
-                  <span className="text-xl">
+                  <span className="text-lg sm:text-xl">
                     🍓
                   </span>
 
                   <div>
 
-                    <p className="text-xs text-white/60">
+                    <p className="text-[9px] text-white/60 sm:text-xs">
                       Today is
                     </p>
 
-                    <p className="font-bold text-white">
+                    <p className="text-xs font-bold text-white sm:text-sm">
                       Your Day!
                     </p>
 
@@ -346,9 +341,9 @@ const HeroSection = () => {
 
               {/* Sparkle badge */}
 
-              <div className="absolute -bottom-4 -left-4 z-30 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/25 bg-white/15 shadow-xl backdrop-blur-xl">
+              <div className="absolute -bottom-3 -left-2 z-30 flex h-11 w-11 items-center justify-center rounded-xl border border-white/25 bg-white/15 shadow-lg backdrop-blur-sm sm:-bottom-4 sm:-left-4 sm:h-14 sm:w-14 sm:rounded-2xl">
 
-                <HiOutlineSparkles className="animate-pulse text-2xl text-pink-100" />
+                <HiOutlineSparkles className="animate-pulse text-xl text-pink-100 sm:text-2xl" />
 
               </div>
 
@@ -363,19 +358,19 @@ const HeroSection = () => {
           BOTTOM GLOW
       ====================================================== */}
 
-      <div className="absolute bottom-0 left-1/2 h-40 w-[80%] -translate-x-1/2 rounded-full bg-pink-300/20 blur-[100px]" />
+      <div className="absolute bottom-0 left-1/2 h-24 w-[70%] -translate-x-1/2 rounded-full bg-pink-300/15 blur-[60px]" />
 
       {/* =====================================================
           SCROLL
       ====================================================== */}
 
-      <div className="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 flex-col items-center gap-1 text-white/60">
+      <div className="absolute bottom-4 left-1/2 z-30 flex -translate-x-1/2 flex-col items-center gap-1 text-white/60">
 
-        <span className="text-[10px] font-medium tracking-[0.3em] uppercase">
+        <span className="text-[9px] font-medium tracking-[0.25em] uppercase">
           Scroll
         </span>
 
-        <HiOutlineArrowDown className="animate-bounce text-lg" />
+        <HiOutlineArrowDown className="animate-bounce text-base" />
 
       </div>
 
