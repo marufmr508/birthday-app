@@ -14,130 +14,6 @@ body {
 }
 
 /* ========================================
-   PINK GRADIENT ORB ANIMATIONS
-======================================== */
-
-.pink-orb {
-  animation: pinkOrb 15s ease-in-out infinite alternate;
-}
-
-.pink-orb-delay {
-  animation: pinkOrb 19s ease-in-out infinite alternate-reverse;
-}
-
-.pink-orb-slow {
-  animation: pinkOrb 24s ease-in-out infinite alternate;
-}
-
-/* ========================================
-   FLOATING HEART ANIMATIONS
-======================================== */
-
-.floating-heart {
-  position: absolute;
-  color: rgba(236, 72, 153, 0.3);
-  font-size: 42px;
-  animation: floatHeart 9s ease-in-out infinite;
-}
-
-.floating-heart-delay {
-  position: absolute;
-  color: rgba(217, 70, 239, 0.3);
-  font-size: 30px;
-  animation: floatHeart 12s ease-in-out infinite reverse;
-}
-
-/* ========================================
-   SPARKLE ANIMATIONS
-======================================== */
-
-.sparkle {
-  position: absolute;
-  color: rgba(236, 72, 153, 0.5);
-  font-size: 25px;
-  animation: sparkle 4s ease-in-out infinite;
-}
-
-.sparkle-delay {
-  position: absolute;
-  color: rgba(217, 70, 239, 0.4);
-  font-size: 30px;
-  animation: sparkle 6s ease-in-out infinite reverse;
-}
-
-/* ========================================
-   FADE IN ANIMATION
-======================================== */
-
-.animate-fade-in {
-  animation: fadeIn 1s ease-out both;
-}
-
-/* ========================================
-   KEYFRAMES
-======================================== */
-
-/* Pink Orb Movement */
-
-@keyframes pinkOrb {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-
-  50% {
-    transform: translate(80px, -60px) scale(1.15);
-  }
-
-  100% {
-    transform: translate(-50px, 80px) scale(0.9);
-  }
-}
-
-/* Floating Hearts */
-
-@keyframes floatHeart {
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 0.3;
-  }
-
-  50% {
-    transform: translateY(-45px) rotate(12deg);
-    opacity: 0.8;
-  }
-}
-
-/* Sparkles */
-
-@keyframes sparkle {
-  0%,
-  100% {
-    transform: scale(0.7) rotate(0deg);
-    opacity: 0.2;
-  }
-
-  50% {
-    transform: scale(1.3) rotate(180deg);
-    opacity: 1;
-  }
-}
-
-/* Fade In */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ========================================
    ACCESSIBILITY
 ======================================== */
 
@@ -145,8 +21,7 @@ body {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
