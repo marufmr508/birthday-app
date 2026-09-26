@@ -1,4 +1,7 @@
- import Image from "next/image";
+ 
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
 
 import {
@@ -15,19 +18,20 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden bg-[#4c0519] text-white"
+      className="rounded-2xl mt-10  relative min-h-screen overflow-hidden bg-[#4c0519] text-white"
     >
       {/* =====================================================
-          STRAWBERRY BACKGROUND
+          BACKGROUND
       ====================================================== */}
 
-      {/* Main gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_35%,#fecdd3_0%,#fb7185_20%,#f43f5e_40%,#e11d48_60%,#9f1239_80%,#4c0519_100%)]" />
 
-      {/* Main glow - reduced blur */}
+      {/* Main glow */}
+
       <div className="absolute left-[55%] top-[35%] h-[350px] w-[350px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-200/20 blur-[60px] sm:h-[450px] sm:w-[450px] sm:blur-[80px]" />
 
       {/* Side glows */}
+
       <div className="absolute -right-32 top-20 h-[350px] w-[350px] rounded-full bg-rose-300/15 blur-[70px]" />
 
       <div className="absolute -bottom-32 -left-32 h-[350px] w-[350px] rounded-full bg-red-400/15 blur-[70px]" />
@@ -36,17 +40,10 @@ const HeroSection = () => {
           FLOATING SPHERES
       ====================================================== */}
 
-      {/* Large sphere */}
-      <div
-        className="absolute left-[4%] top-[18%] h-20 w-20 rounded-full border border-white/20 bg-white/10 shadow-[0_0_40px_rgba(253,164,175,0.3)] sm:h-28 sm:w-28"
-      />
+      <div className="absolute left-[4%] top-[18%] h-20 w-20 rounded-full border border-white/20 bg-white/10 shadow-[0_0_40px_rgba(253,164,175,0.3)] sm:h-28 sm:w-28" />
 
-      {/* Right sphere */}
-      <div
-        className="absolute right-[5%] top-[12%] h-28 w-28 rounded-full border border-white/20 bg-white/10 shadow-[0_0_50px_rgba(251,113,133,0.3)] sm:h-36 sm:w-36"
-      />
+      <div className="absolute right-[5%] top-[12%] h-28 w-28 rounded-full border border-white/20 bg-white/10 shadow-[0_0_50px_rgba(251,113,133,0.3)] sm:h-36 sm:w-36" />
 
-      {/* Bottom spheres */}
       <div className="absolute bottom-[12%] left-[8%] h-16 w-16 rounded-full border border-white/20 bg-white/10 shadow-[0_0_35px_rgba(253,164,175,0.3)] sm:h-20 sm:w-20" />
 
       <div className="absolute bottom-[15%] right-[15%] h-14 w-14 rounded-full border border-white/20 bg-white/10 shadow-[0_0_30px_rgba(251,113,133,0.3)] sm:h-20 sm:w-20" />
@@ -101,7 +98,7 @@ const HeroSection = () => {
           MAIN CONTENT
       ====================================================== */}
 
-      <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl items-center px-5 py-24 sm:px-6 lg:px-10 lg:py-20">
+      <div className="relative z-20 mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-20 sm:px-6 sm:py-24 lg:px-10 lg:py-20">
 
         <div className="grid w-full items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
@@ -109,11 +106,11 @@ const HeroSection = () => {
               LEFT CONTENT
           ================================================== */}
 
-          <div className="text-center lg:text-left">
+          <div className="min-w-0 text-center lg:text-left">
 
             {/* Badge */}
 
-            <div className="mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 shadow-lg backdrop-blur-sm sm:px-5 sm:py-2.5">
+            <div className="mb-8 inline-flex max-w-full items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 shadow-lg backdrop-blur-sm sm:px-5 sm:py-2.5">
 
               <HiOutlineHeart className="shrink-0 animate-pulse text-pink-100" />
 
@@ -125,27 +122,72 @@ const HeroSection = () => {
 
             </div>
 
-            {/* Heading */}
+            {/* =================================================
+                MODERN PREMIUM HEADING
+            ================================================== */}
 
-            <h1 className="font-black leading-[1.05] tracking-tight">
+            <div className="relative mx-auto max-w-2xl lg:mx-0">
 
-              <span className="block text-[2.7rem] font-extrabold text-white drop-shadow-[0_5px_20px_rgba(76,5,25,0.45)] sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">
-                Happy Birthday
-              </span>
+              {/* Soft glow */}
 
-              <span className="mt-3 block text-[2.7rem] font-black text-[#fff7f8] drop-shadow-[0_3px_15px_rgba(76,5,25,0.8)] sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">
-                Dear Rubat
-              </span>
+              <div className="pointer-events-none absolute -left-10 top-10 h-40 w-40 rounded-full bg-pink-400/10 blur-[80px]" />
 
-              <span className="mt-3 block text-3xl sm:text-5xl">
-                🍓✨
-              </span>
+              <h1 className="relative">
 
-            </h1>
+                {/* Eyebrow */}
 
-            {/* Bangla */}
+                <span className="mb-5 flex items-center justify-center gap-3 text-[10px] font-semibold uppercase tracking-[0.3em] text-pink-100/80 sm:text-xs lg:justify-start">
 
-            <p className="mx-auto mt-6 max-w-xl text-base font-semibold leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(76,5,25,0.4)] sm:text-xl lg:mx-0 lg:text-2xl">
+                  <span className="h-px w-8 bg-pink-200/60 sm:w-12" />
+
+                  A Special Celebration
+
+                  <span className="h-px w-8 bg-pink-200/60 sm:hidden" />
+
+                </span>
+
+                {/* Happy */}
+
+                <span className="relative mt-2 block text-center text-[clamp(3.5rem,9vw,6.5rem)] font-black leading-[0.9] tracking-[-0.065em] lg:text-left">
+
+                   <span className="bg-gradient-to-r from-pink-50 via-pink-200 to-pink-300 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(76,5,25,0.7)]">
+   Happy
+</span>
+
+                </span>
+
+                {/* Birthday */}
+
+                <span className="relative mb-3 mt-2 block text-center text-[clamp(3.5rem,9vw,6.5rem)] font-black leading-[0.9] tracking-[-0.065em] lg:text-left">
+
+                   <span className="bg-gradient-to-r from-pink-50 via-pink-200 to-pink-300 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(76,5,25,0.7)]">
+  Birthday
+</span>
+
+                </span>
+
+                
+
+                <div className="relative inline-block    ">
+                 <span className="   block text-center font-serif text-[clamp(3.5rem,9vw,6.5rem)] font-bold italic leading-[0.9] tracking-[-0.04em] text-white drop-shadow-[0_5px_25px_rgba(76,5,25,0.3)] lg:text-left">
+
+                   Dear Rubat
+
+                </span>
+
+  <span className="absolute -right-5 -top-3 text-sm text-pink-100/80 sm:-right-7 sm:-top-4 sm:text-lg">
+    ✦
+  </span>
+</div>
+              </h1>
+
+            </div>
+
+            {/* =================================================
+                BANGLA MESSAGE
+            ================================================== */}
+
+            <p className="mx-auto mt-7 max-w-xl text-base font-semibold leading-relaxed text-white drop-shadow-[0_2px_10px_rgba(76,5,25,0.4)] sm:text-xl lg:mx-0 lg:text-2xl">
 
               আজকের দিনটা শুধু আপনার জন্মদিন নয়,
 
@@ -167,6 +209,7 @@ const HeroSection = () => {
                 href="#surprise"
                 className="group flex w-full items-center justify-center gap-3 rounded-full bg-white px-6 py-3.5 font-bold text-rose-600 shadow-lg transition duration-300 hover:-translate-y-1 hover:scale-105 sm:w-auto"
               >
+
                 <HiOutlineGift className="text-xl transition duration-300 group-hover:rotate-12" />
 
                 Open Your Surprise
@@ -181,9 +224,11 @@ const HeroSection = () => {
                 href="#memories"
                 className="flex w-full items-center justify-center gap-3 rounded-full border border-white/30 bg-white/10 px-6 py-3.5 font-semibold text-white shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/20 sm:w-auto"
               >
+
                 <HiOutlineCake className="text-xl" />
 
                 Our Memories
+
               </Link>
 
             </div>
@@ -195,6 +240,7 @@ const HeroSection = () => {
             <div className="mt-8 flex justify-center gap-2 sm:gap-3 lg:justify-start">
 
               <div className="rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 shadow-lg backdrop-blur-sm sm:rounded-2xl sm:px-5 sm:py-3">
+
                 <p className="text-lg font-bold sm:text-xl">
                   ∞
                 </p>
@@ -202,9 +248,11 @@ const HeroSection = () => {
                 <p className="text-[10px] text-rose-100/70 sm:text-xs">
                   Love
                 </p>
+
               </div>
 
               <div className="rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 shadow-lg backdrop-blur-sm sm:rounded-2xl sm:px-5 sm:py-3">
+
                 <p className="text-lg font-bold sm:text-xl">
                   365
                 </p>
@@ -212,9 +260,11 @@ const HeroSection = () => {
                 <p className="text-[10px] text-rose-100/70 sm:text-xs">
                   Memories
                 </p>
+
               </div>
 
               <div className="rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 shadow-lg backdrop-blur-sm sm:rounded-2xl sm:px-5 sm:py-3">
+
                 <p className="text-lg font-bold sm:text-xl">
                   ♥
                 </p>
@@ -222,6 +272,7 @@ const HeroSection = () => {
                 <p className="text-[10px] text-rose-100/70 sm:text-xs">
                   Forever
                 </p>
+
               </div>
 
             </div>
@@ -229,10 +280,10 @@ const HeroSection = () => {
           </div>
 
           {/* =================================================
-              RIGHT — IMAGE
+              RIGHT — IMAGE CARD
           ================================================== */}
 
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex min-w-0 items-center justify-center">
 
             {/* Image glow */}
 
@@ -290,7 +341,9 @@ const HeroSection = () => {
                     <div className="flex items-center gap-3">
 
                       <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/20 sm:h-11 sm:w-11">
+
                         <HiOutlineHeart className="animate-pulse text-xl text-pink-100 sm:text-2xl" />
+
                       </div>
 
                       <div className="min-w-0">
@@ -352,6 +405,7 @@ const HeroSection = () => {
           </div>
 
         </div>
+
       </div>
 
       {/* =====================================================
@@ -366,7 +420,7 @@ const HeroSection = () => {
 
       <div className="absolute bottom-4 left-1/2 z-30 flex -translate-x-1/2 flex-col items-center gap-1 text-white/60">
 
-        <span className="text-[9px] font-medium tracking-[0.25em] uppercase">
+        <span className="text-[9px] font-medium uppercase tracking-[0.25em]">
           Scroll
         </span>
 
